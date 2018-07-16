@@ -5,7 +5,7 @@ import './App.css';
 class App extends Component {
 
   submit = () => {
-    console.log(this.text);
+    console.log(this.text.value);
   }
 
   render() {
@@ -15,9 +15,10 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <Welcome text="Welcome to React" />
         </header>
-        <p className="App-intro" ref={(input) => this.text = input }>
+        <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
+        <input type="text" ref={(input) => this.text = input } />
         <button onClick={this.submit}>Show Value</button>
       </div>
     );
