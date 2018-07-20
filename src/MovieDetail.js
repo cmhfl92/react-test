@@ -30,10 +30,17 @@ class MovieDetail extends Component {
     return (
       <MovieWrapper backdrop={`${BACKDROP_PATH}${movie.backdrop_path}`}>
         <MovieInfo>
-          <Overdrive id={movie.id}> 
+          <Overdrive id={movie.id}>
           <Poster src={`${POSTER_PATH}${movie.poster_path}`} alt={movie.title} />
         </Overdrive>
           <div>
+            {/* Ternary Conditional */}
+            {/* {this.state.movie.title ? (
+              <h1>Hello</h1>
+            ) : (
+              <h1>Hi</h1>
+            )} */}
+
             <h1>{movie.title}</h1>
             <h3>Release Date: {movie.release_date}</h3>
             <p>{movie.overview}</p>

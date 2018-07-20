@@ -6,6 +6,21 @@
   height: 80px;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.title {
+  font-family: 'Slabo 27px', serif;
+  color: white;
+  text-decoration: none;
+}
+
 .App-header {
   background-color: #111;
   height: 60px;
